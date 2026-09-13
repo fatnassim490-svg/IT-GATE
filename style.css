@@ -1,0 +1,141 @@
+/* ============================================
+   IT GATE - Styles personnalisés
+   (Tailwind gère l'essentiel, ce fichier couvre
+   ce que Tailwind ne fait pas nativement)
+   ============================================ */
+
+:root {
+  --dahua-red: #E60012;
+  --dahua-red-dark: #b8000e;
+  --tech-blue: #00B4D8;
+  --dark-bg: #0B0D10;
+  --dark-card: #14171C;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: 'Inter', 'Segoe UI', sans-serif;
+}
+
+/* ---- Scan line / effet high-tech sur le Hero ---- */
+.hero-grid-bg {
+  background-image:
+    linear-gradient(rgba(230, 0, 18, 0.06) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(230, 0, 18, 0.06) 1px, transparent 1px);
+  background-size: 40px 40px;
+}
+
+/* ---- Effet de pulsation sur le point "en ligne / actif" ---- */
+@keyframes pulse-red {
+  0% { box-shadow: 0 0 0 0 rgba(230, 0, 18, 0.6); }
+  70% { box-shadow: 0 0 0 10px rgba(230, 0, 18, 0); }
+  100% { box-shadow: 0 0 0 0 rgba(230, 0, 18, 0); }
+}
+.pulse-dot {
+  animation: pulse-red 2s infinite;
+}
+
+/* ---- Cartes produits/services : effet hover ---- */
+.card-hover {
+  transition: transform 0.35s ease, box-shadow 0.35s ease, border-color 0.35s ease;
+}
+.card-hover:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 20px 40px -15px rgba(230, 0, 18, 0.35);
+  border-color: var(--dahua-red);
+}
+
+/* ---- Icône dans les cartes : effet de scan au survol ---- */
+.card-hover:hover .icon-wrap {
+  background-color: var(--dahua-red);
+  transform: scale(1.08) rotate(-3deg);
+}
+.icon-wrap {
+  transition: all 0.35s ease;
+}
+
+/* ---- Bouton flottant WhatsApp ---- */
+.whatsapp-float {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  z-index: 999;
+  animation: float-bounce 3s ease-in-out infinite;
+}
+@keyframes float-bounce {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-6px); }
+}
+.whatsapp-float:hover {
+  transform: scale(1.1);
+}
+
+/* ---- Soulignement animé des liens de navigation ---- */
+.nav-link {
+  position: relative;
+}
+.nav-link::after {
+  content: '';
+  position: absolute;
+  left: 0;
+  bottom: -4px;
+  width: 0;
+  height: 2px;
+  background-color: var(--dahua-red);
+  transition: width 0.3s ease;
+}
+.nav-link:hover::after {
+  width: 100%;
+}
+
+/* ---- Menu mobile ---- */
+#menu-mobile {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease;
+}
+#menu-mobile.open {
+  max-height: 500px;
+}
+
+/* ---- Badge étoiles ---- */
+.badge-glass {
+  backdrop-filter: blur(6px);
+  background-color: rgba(255, 255, 255, 0.08);
+}
+
+/* ---- Section "Pourquoi nous" fond sombre avec grain léger ---- */
+.dark-section {
+  background-color: var(--dark-bg);
+}
+
+/* ---- Focus accessibilité sur les champs de formulaire ---- */
+input:focus, textarea:focus, select:focus {
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(230, 0, 18, 0.25);
+}
+
+/* ---- Message d'erreur / succès formulaire ---- */
+.form-error {
+  color: #ff4d4d;
+  font-size: 0.8rem;
+  margin-top: 4px;
+  display: none;
+}
+.form-error.visible {
+  display: block;
+}
+
+/* ---- Fade-in au scroll (classe ajoutée par JS si besoin) ---- */
+.fade-in-up {
+  opacity: 0;
+  transform: translateY(20px);
+  transition: opacity 0.6s ease, transform 0.6s ease;
+}
+.fade-in-up.visible {
+  opacity: 1;
+  transform: translateY(0);
+}

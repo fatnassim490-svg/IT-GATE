@@ -1,0 +1,523 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IT GATE — Sécurité & Vidéosurveillance Dahua à Alger | Bab Ezzouar</title>
+  <meta name="description" content="IT GATE, partenaire Dahua en Algérie : vente, installation et maintenance de caméras de surveillance, alarmes, contrôle d'accès et visiophonie à Bab Ezzouar, Alger.">
+
+  <!-- Tailwind CSS via CDN -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <!-- Lucide Icons via CDN -->
+  <script src="https://unpkg.com/lucide@latest"></script>
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
+  <!-- Styles personnalisés -->
+  <link rel="stylesheet" href="style.css">
+
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            dahua: {
+              red: '#E60012',
+              dark: '#b8000e'
+            },
+            techblue: '#00B4D8',
+            darkbg: '#0B0D10',
+            darkcard: '#14171C'
+          },
+          fontFamily: {
+            sans: ['Inter', 'sans-serif']
+          }
+        }
+      }
+    }
+  </script>
+</head>
+
+<body class="bg-white text-gray-800 font-sans antialiased">
+
+  <!-- ============================= -->
+  <!-- HEADER / NAVIGATION -->
+  <!-- ============================= -->
+  <header id="site-header" class="fixed top-0 left-0 w-full z-50 transition-all duration-300 bg-transparent">
+    <div class="max-w-7xl mx-auto px-5 sm:px-8 py-4 flex items-center justify-between">
+
+      <!-- Logo -->
+      <a href="#accueil" class="flex items-center gap-2">
+        <div class="w-10 h-10 bg-dahua-red rounded-lg flex items-center justify-center shrink-0">
+          <i data-lucide="shield-check" class="text-white w-6 h-6"></i>
+        </div>
+        <div class="leading-tight">
+          <p class="text-white font-extrabold text-lg tracking-tight">IT GATE</p>
+          <p class="text-gray-300 text-[10px] uppercase tracking-widest -mt-1">Dahua Security Solution</p>
+        </div>
+      </a>
+
+      <!-- Navigation Desktop -->
+      <nav class="hidden lg:flex items-center gap-8 text-sm font-medium text-gray-200">
+        <a href="#accueil" class="nav-link hover:text-white transition">Accueil</a>
+        <a href="#produits" class="nav-link hover:text-white transition">Produits & Services</a>
+        <a href="#pourquoi-nous" class="nav-link hover:text-white transition">Pourquoi Nous</a>
+        <a href="#localisation" class="nav-link hover:text-white transition">Localisation</a>
+        <a href="#contact" class="nav-link hover:text-white transition">Contact</a>
+      </nav>
+
+      <!-- CTA Desktop -->
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="tel:0770886407" class="flex items-center gap-2 text-white text-sm font-semibold px-4 py-2 rounded-lg border border-gray-600 hover:border-white transition">
+          <i data-lucide="phone" class="w-4 h-4"></i>
+          0770 88 64 07
+        </a>
+        <a href="https://wa.me/213770886407" target="_blank" rel="noopener" class="flex items-center gap-2 bg-dahua-red hover:bg-dahua-dark text-white text-sm font-semibold px-4 py-2 rounded-lg transition">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Devis Gratuit
+        </a>
+      </div>
+
+      <!-- Bouton Menu Mobile -->
+      <button id="btn-menu-mobile" class="lg:hidden text-white p-2">
+        <i id="icon-menu" data-lucide="menu" class="w-7 h-7"></i>
+      </button>
+    </div>
+
+    <!-- Menu Mobile déroulant -->
+    <div id="menu-mobile" class="lg:hidden bg-black/95 backdrop-blur-md px-5">
+      <nav class="flex flex-col gap-1 py-4 text-gray-200 text-sm font-medium">
+        <a href="#accueil" class="py-3 border-b border-white/10">Accueil</a>
+        <a href="#produits" class="py-3 border-b border-white/10">Produits & Services</a>
+        <a href="#pourquoi-nous" class="py-3 border-b border-white/10">Pourquoi Nous</a>
+        <a href="#localisation" class="py-3 border-b border-white/10">Localisation</a>
+        <a href="#contact" class="py-3 border-b border-white/10">Contact</a>
+        <a href="https://wa.me/213770886407" target="_blank" rel="noopener" class="mt-3 flex items-center justify-center gap-2 bg-dahua-red text-white font-semibold px-4 py-3 rounded-lg">
+          <i data-lucide="message-circle" class="w-4 h-4"></i>
+          Devis Gratuit sur WhatsApp
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ============================= -->
+  <!-- HERO SECTION -->
+  <!-- ============================= -->
+  <section id="accueil" class="relative bg-darkbg hero-grid-bg pt-36 pb-24 sm:pt-44 sm:pb-32 px-5 sm:px-8 overflow-hidden">
+    <!-- Dégradé décoratif -->
+    <div class="absolute top-0 right-0 w-[500px] h-[500px] bg-dahua-red/10 rounded-full blur-3xl -translate-y-1/3 translate-x-1/3"></div>
+    <div class="absolute bottom-0 left-0 w-[400px] h-[400px] bg-techblue/10 rounded-full blur-3xl translate-y-1/3 -translate-x-1/3"></div>
+
+    <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-12 items-center">
+      <div>
+        <div class="inline-flex items-center gap-2 badge-glass border border-white/10 rounded-full px-4 py-1.5 mb-6">
+          <span class="w-2 h-2 bg-dahua-red rounded-full pulse-dot"></span>
+          <span class="text-gray-200 text-xs font-medium">Partenaire Officiel Dahua Algérie</span>
+        </div>
+
+        <h1 class="text-white text-4xl sm:text-5xl lg:text-6xl font-extrabold leading-tight tracking-tight">
+          Protégez ce qui compte le plus avec les meilleures solutions <span class="text-dahua-red">Dahua</span> en Algérie.
+        </h1>
+
+        <p class="text-gray-400 text-base sm:text-lg mt-6 max-w-xl">
+          Vente, installation et maintenance de caméras de surveillance, systèmes d'alarme et contrôle d'accès pour professionnels et particuliers à Bab Ezzouar et sur tout Alger.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 mt-9">
+          <a href="https://wa.me/213770886407" target="_blank" rel="noopener" class="flex items-center justify-center gap-2 bg-dahua-red hover:bg-dahua-dark text-white font-semibold px-7 py-4 rounded-xl transition shadow-lg shadow-dahua-red/20">
+            <i data-lucide="message-circle" class="w-5 h-5"></i>
+            Demander un devis
+          </a>
+          <a href="#produits" class="flex items-center justify-center gap-2 bg-white/5 border border-white/15 hover:bg-white/10 text-white font-semibold px-7 py-4 rounded-xl transition">
+            Découvrir nos solutions
+            <i data-lucide="arrow-down" class="w-5 h-5"></i>
+          </a>
+        </div>
+
+        <!-- Badge de réassurance -->
+        <div class="flex items-center gap-2 mt-8">
+          <div class="flex text-yellow-400">
+            <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+            <i data-lucide="star" class="w-4 h-4 fill-yellow-400"></i>
+          </div>
+          <p class="text-gray-400 text-sm">4.4/5 basé sur les avis clients à Bab Ezzouar</p>
+        </div>
+      </div>
+
+      <!-- Visuel Hero -->
+      <div class="relative hidden lg:block">
+        <div class="relative bg-darkcard border border-white/10 rounded-2xl p-8 shadow-2xl">
+          <div class="flex items-center justify-between mb-6">
+            <div class="flex items-center gap-2">
+              <span class="w-2.5 h-2.5 bg-dahua-red rounded-full pulse-dot"></span>
+              <p class="text-white text-sm font-semibold">Surveillance en direct</p>
+            </div>
+            <i data-lucide="wifi" class="text-techblue w-5 h-5"></i>
+          </div>
+          <div class="grid grid-cols-2 gap-3">
+            <div class="bg-black/50 rounded-lg aspect-video flex items-center justify-center border border-white/5">
+              <i data-lucide="camera" class="text-gray-500 w-8 h-8"></i>
+            </div>
+            <div class="bg-black/50 rounded-lg aspect-video flex items-center justify-center border border-white/5">
+              <i data-lucide="camera" class="text-gray-500 w-8 h-8"></i>
+            </div>
+            <div class="bg-black/50 rounded-lg aspect-video flex items-center justify-center border border-white/5">
+              <i data-lucide="scan-face" class="text-gray-500 w-8 h-8"></i>
+            </div>
+            <div class="bg-black/50 rounded-lg aspect-video flex items-center justify-center border border-white/5">
+              <i data-lucide="lock-keyhole" class="text-gray-500 w-8 h-8"></i>
+            </div>
+          </div>
+          <div class="mt-6 flex items-center justify-between text-xs text-gray-400 border-t border-white/10 pt-4">
+            <span class="flex items-center gap-1.5"><i data-lucide="badge-check" class="w-4 h-4 text-techblue"></i> 4K Ultra HD</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="moon" class="w-4 h-4 text-techblue"></i> Vision nocturne</span>
+            <span class="flex items-center gap-1.5"><i data-lucide="brain-circuit" class="w-4 h-4 text-techblue"></i> IA intégrée</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SECTION PRODUITS & SERVICES -->
+  <!-- ============================= -->
+  <section id="produits" class="bg-gray-50 py-20 sm:py-28 px-5 sm:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+        <span class="text-dahua-red font-semibold text-sm uppercase tracking-widest">Nos solutions</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Produits & Services</h2>
+        <p class="text-gray-500 mt-4">Des équipements Dahua de dernière génération, installés et configurés par des techniciens certifiés.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-3 gap-6">
+
+        <!-- Carte 1 -->
+        <div class="card-hover bg-white border border-gray-200 rounded-2xl p-7 fade-in-up">
+          <div class="icon-wrap w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="video" class="text-white w-7 h-7"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Caméras IP & HD Dahua</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Vision nocturne, résolution 4K et détection intelligente par IA pour une surveillance fiable de jour comme de nuit, en intérieur et extérieur.</p>
+        </div>
+
+        <!-- Carte 2 -->
+        <div class="card-hover bg-white border border-gray-200 rounded-2xl p-7 fade-in-up">
+          <div class="icon-wrap w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="fingerprint" class="text-white w-7 h-7"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Contrôle d'accès & Pointeuses</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Systèmes biométriques et badges pour sécuriser les accès de vos locaux et automatiser la gestion des présences de vos équipes.</p>
+        </div>
+
+        <!-- Carte 3 -->
+        <div class="card-hover bg-white border border-gray-200 rounded-2xl p-7 fade-in-up">
+          <div class="icon-wrap w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="door-open" class="text-white w-7 h-7"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Visiophonie & Interphonie</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Solutions intelligentes pour identifier vos visiteurs à distance et sécuriser l'entrée de votre domicile ou de votre entreprise.</p>
+        </div>
+
+        <!-- Carte 4 -->
+        <div class="card-hover bg-white border border-gray-200 rounded-2xl p-7 fade-in-up">
+          <div class="icon-wrap w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="siren" class="text-white w-7 h-7"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Alarmes & Détection incendie</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Systèmes anti-intrusion et détecteurs incendie pour protéger vos biens et alerter en temps réel en cas de danger.</p>
+        </div>
+
+        <!-- Carte 5 -->
+        <div class="card-hover bg-white border border-gray-200 rounded-2xl p-7 fade-in-up">
+          <div class="icon-wrap w-14 h-14 bg-gray-900 rounded-xl flex items-center justify-center mb-5">
+            <i data-lucide="wrench" class="text-white w-7 h-7"></i>
+          </div>
+          <h3 class="text-lg font-bold text-gray-900 mb-2">Installation & Support Technique</h3>
+          <p class="text-gray-500 text-sm leading-relaxed">Étude, installation et configuration sur site par nos techniciens, avec suivi et maintenance après-vente à Alger.</p>
+        </div>
+
+        <!-- Carte 6 (CTA) -->
+        <div class="card-hover bg-gray-900 border border-gray-900 rounded-2xl p-7 flex flex-col justify-between fade-in-up">
+          <div>
+            <div class="icon-wrap w-14 h-14 bg-dahua-red rounded-xl flex items-center justify-center mb-5">
+              <i data-lucide="calculator" class="text-white w-7 h-7"></i>
+            </div>
+            <h3 class="text-lg font-bold text-white mb-2">Besoin d'un conseil ?</h3>
+            <p class="text-gray-400 text-sm leading-relaxed">Nos experts étudient gratuitement votre projet et vous proposent la solution la mieux adaptée à votre budget.</p>
+          </div>
+          <a href="https://wa.me/213770886407" target="_blank" rel="noopener" class="mt-5 inline-flex items-center gap-2 text-dahua-red font-semibold text-sm hover:gap-3 transition-all">
+            Contactez-nous <i data-lucide="arrow-right" class="w-4 h-4"></i>
+          </a>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SECTION POURQUOI CHOISIR IT GATE -->
+  <!-- ============================= -->
+  <section id="pourquoi-nous" class="dark-section py-20 sm:py-28 px-5 sm:px-8 relative overflow-hidden">
+    <div class="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-[600px] h-[600px] bg-dahua-red/5 rounded-full blur-3xl"></div>
+
+    <div class="relative max-w-7xl mx-auto grid lg:grid-cols-2 gap-14 items-center">
+      <div class="fade-in-up">
+        <span class="text-dahua-red font-semibold text-sm uppercase tracking-widest">Notre engagement</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-white mt-3 mb-6">Pourquoi choisir IT GATE ?</h2>
+        <p class="text-gray-400 mb-8 max-w-lg">En tant que partenaire officiel Dahua en Algérie, nous garantissons un matériel authentique et un accompagnement complet, de l'étude de votre projet à la maintenance.</p>
+
+        <div class="space-y-5">
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 shrink-0 bg-darkcard border border-white/10 rounded-lg flex items-center justify-center">
+              <i data-lucide="badge-check" class="text-dahua-red w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Équipement Dahua 100% authentique & garanti</h3>
+              <p class="text-gray-500 text-sm mt-1">Produits d'origine avec garantie constructeur, sans risque de contrefaçon.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 shrink-0 bg-darkcard border border-white/10 rounded-lg flex items-center justify-center">
+              <i data-lucide="user-check" class="text-dahua-red w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Expertise technique et conseil sur-mesure</h3>
+              <p class="text-gray-500 text-sm mt-1">Une équipe qui étudie vos besoins réels avant de proposer une solution adaptée.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 shrink-0 bg-darkcard border border-white/10 rounded-lg flex items-center justify-center">
+              <i data-lucide="zap" class="text-dahua-red w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Intervention rapide sur Bab Ezzouar et Alger</h3>
+              <p class="text-gray-500 text-sm mt-1">Basés à Bab Ezzouar, nous intervenons rapidement dans toute la wilaya d'Alger.</p>
+            </div>
+          </div>
+          <div class="flex items-start gap-4">
+            <div class="w-11 h-11 shrink-0 bg-darkcard border border-white/10 rounded-lg flex items-center justify-center">
+              <i data-lucide="headset" class="text-dahua-red w-5 h-5"></i>
+            </div>
+            <div>
+              <h3 class="text-white font-semibold">Service après-vente (SAV) réactif</h3>
+              <p class="text-gray-500 text-sm mt-1">Un accompagnement après installation pour garantir la fiabilité de vos équipements dans la durée.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Bloc chiffres clés -->
+      <div class="grid grid-cols-2 gap-5 fade-in-up">
+        <div class="bg-darkcard border border-white/10 rounded-2xl p-8 text-center">
+          <p class="text-4xl font-extrabold text-dahua-red">100%</p>
+          <p class="text-gray-400 text-sm mt-2">Matériel Dahua authentique</p>
+        </div>
+        <div class="bg-darkcard border border-white/10 rounded-2xl p-8 text-center">
+          <p class="text-4xl font-extrabold text-techblue">4.4/5</p>
+          <p class="text-gray-400 text-sm mt-2">Note moyenne clients</p>
+        </div>
+        <div class="bg-darkcard border border-white/10 rounded-2xl p-8 text-center">
+          <p class="text-4xl font-extrabold text-dahua-red">6j/7</p>
+          <p class="text-gray-400 text-sm mt-2">Samedi à Jeudi</p>
+        </div>
+        <div class="bg-darkcard border border-white/10 rounded-2xl p-8 text-center">
+          <p class="text-4xl font-extrabold text-techblue">SAV</p>
+          <p class="text-gray-400 text-sm mt-2">Support réactif</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- SECTION LOCALISATION & CONTACT -->
+  <!-- ============================= -->
+  <section id="localisation" class="bg-gray-50 py-20 sm:py-28 px-5 sm:px-8">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center max-w-2xl mx-auto mb-16 fade-in-up">
+        <span class="text-dahua-red font-semibold text-sm uppercase tracking-widest">Nous trouver</span>
+        <h2 class="text-3xl sm:text-4xl font-extrabold text-gray-900 mt-3">Localisation & Contact</h2>
+        <p class="text-gray-500 mt-4">Rendez-nous visite à Bab Ezzouar ou contactez-nous directement pour un devis rapide.</p>
+      </div>
+
+      <div class="grid lg:grid-cols-2 gap-8">
+
+        <!-- Colonne infos + carte -->
+        <div class="fade-in-up space-y-6">
+
+          <!-- Carte d'informations -->
+          <div class="bg-gray-900 rounded-2xl p-8 text-white">
+            <h3 class="text-xl font-bold mb-6 flex items-center gap-2">
+              <i data-lucide="map-pin" class="text-dahua-red w-5 h-5"></i>
+              Informations pratiques
+            </h3>
+
+            <div class="space-y-5">
+              <div class="flex items-start gap-4">
+                <i data-lucide="building-2" class="text-techblue w-5 h-5 mt-0.5 shrink-0"></i>
+                <div>
+                  <p class="font-semibold text-sm">Adresse</p>
+                  <p class="text-gray-400 text-sm">Cité Douzi 3, Lot N°489, Bab Ezzouar, Alger 16024</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <i data-lucide="clock" class="text-techblue w-5 h-5 mt-0.5 shrink-0"></i>
+                <div>
+                  <p class="font-semibold text-sm">Horaires d'ouverture</p>
+                  <p class="text-gray-400 text-sm">Samedi – Jeudi : 08h30 – 18h00</p>
+                  <p class="text-gray-500 text-sm">Vendredi : Fermé</p>
+                </div>
+              </div>
+              <div class="flex items-start gap-4">
+                <i data-lucide="phone-call" class="text-techblue w-5 h-5 mt-0.5 shrink-0"></i>
+                <div>
+                  <p class="font-semibold text-sm">Téléphone / WhatsApp</p>
+                  <a href="tel:0770886407" class="text-gray-400 text-sm hover:text-white transition">0770 88 64 07</a>
+                </div>
+              </div>
+            </div>
+
+            <a href="https://www.google.com/maps/search/?api=1&query=IT+GATE+Cit%C3%A9+Douzi+3+Bab+Ezzouar+Alger" target="_blank" rel="noopener" class="mt-7 w-full flex items-center justify-center gap-2 bg-dahua-red hover:bg-dahua-dark text-white font-semibold px-5 py-3.5 rounded-xl transition">
+              <i data-lucide="navigation" class="w-4 h-4"></i>
+              Ouvrir dans Google Maps
+            </a>
+          </div>
+
+          <!-- Carte Google Maps intégrée -->
+          <div class="rounded-2xl overflow-hidden border border-gray-200 h-64 sm:h-80">
+            <iframe
+              class="w-full h-full"
+              style="border:0;"
+              loading="lazy"
+              referrerpolicy="no-referrer-when-downgrade"
+              src="https://www.google.com/maps?q=Bab+Ezzouar,+Alger&output=embed">
+            </iframe>
+          </div>
+        </div>
+
+        <!-- Formulaire de contact -->
+        <div class="bg-white border border-gray-200 rounded-2xl p-8 fade-in-up">
+          <h3 class="text-xl font-bold text-gray-900 mb-1">Demande de devis rapide</h3>
+          <p class="text-gray-500 text-sm mb-6">Remplissez le formulaire, notre équipe vous recontacte sous 24h.</p>
+
+          <form id="form-contact" novalidate>
+            <div class="grid sm:grid-cols-2 gap-4">
+              <div>
+                <label for="nom" class="block text-sm font-medium text-gray-700 mb-1.5">Nom complet</label>
+                <input type="text" id="nom" name="nom" placeholder="Votre nom" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm">
+                <p id="erreur-nom" class="form-error">Veuillez entrer votre nom (2 caractères min.).</p>
+              </div>
+              <div>
+                <label for="telephone" class="block text-sm font-medium text-gray-700 mb-1.5">Téléphone</label>
+                <input type="tel" id="telephone" name="telephone" placeholder="05/06/07 XX XX XX XX" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm">
+                <p id="erreur-telephone" class="form-error">Numéro invalide (ex. 0770886407).</p>
+              </div>
+            </div>
+
+            <div class="mt-4">
+              <label for="besoin" class="block text-sm font-medium text-gray-700 mb-1.5">Type de besoin</label>
+              <select id="besoin" name="besoin" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm bg-white">
+                <option value="">Sélectionnez une option</option>
+                <option value="cameras">Caméras de surveillance</option>
+                <option value="alarme">Système d'alarme</option>
+                <option value="controle-acces">Contrôle d'accès / Pointeuse</option>
+                <option value="visiophonie">Visiophonie / Interphonie</option>
+                <option value="autre">Autre demande</option>
+              </select>
+              <p id="erreur-besoin" class="form-error">Veuillez sélectionner un type de besoin.</p>
+            </div>
+
+            <div class="mt-4">
+              <label for="message" class="block text-sm font-medium text-gray-700 mb-1.5">Message</label>
+              <textarea id="message" name="message" rows="4" placeholder="Décrivez votre projet (nombre de caméras, superficie, etc.)" class="w-full border border-gray-300 rounded-lg px-4 py-3 text-sm resize-none"></textarea>
+              <p id="erreur-message" class="form-error">Votre message doit contenir au moins 10 caractères.</p>
+            </div>
+
+            <button type="submit" class="mt-6 w-full flex items-center justify-center gap-2 bg-gray-900 hover:bg-black text-white font-semibold px-5 py-3.5 rounded-xl transition">
+              <i data-lucide="send" class="w-4 h-4"></i>
+              Envoyer ma demande
+            </button>
+
+            <div id="form-success" class="hidden mt-4 bg-green-50 border border-green-200 text-green-700 text-sm rounded-lg px-4 py-3 flex items-center gap-2">
+              <i data-lucide="check-circle-2" class="w-4 h-4"></i>
+              Votre demande a bien été envoyée. Nous vous recontactons rapidement !
+            </div>
+          </form>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ============================= -->
+  <!-- FOOTER -->
+  <!-- ============================= -->
+  <footer class="bg-black text-gray-400 pt-16 pb-8 px-5 sm:px-8">
+    <div class="max-w-7xl mx-auto grid sm:grid-cols-2 lg:grid-cols-4 gap-10">
+
+      <div>
+        <div class="flex items-center gap-2 mb-4">
+          <div class="w-9 h-9 bg-dahua-red rounded-lg flex items-center justify-center">
+            <i data-lucide="shield-check" class="text-white w-5 h-5"></i>
+          </div>
+          <p class="text-white font-extrabold text-lg">IT GATE</p>
+        </div>
+        <p class="text-sm leading-relaxed">Partenaire officiel Dahua en Algérie. Vente, installation et maintenance de systèmes de sécurité à Alger.</p>
+        <a href="#" target="_blank" rel="noopener" class="inline-flex items-center gap-2 mt-4 text-sm hover:text-white transition">
+          <i data-lucide="facebook" class="w-4 h-4"></i>
+          Suivez-nous sur Facebook
+        </a>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Liens rapides</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li><a href="#accueil" class="hover:text-white transition">Accueil</a></li>
+          <li><a href="#produits" class="hover:text-white transition">Produits & Services</a></li>
+          <li><a href="#pourquoi-nous" class="hover:text-white transition">Pourquoi Nous</a></li>
+          <li><a href="#localisation" class="hover:text-white transition">Localisation</a></li>
+          <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Nos services</h4>
+        <ul class="space-y-2.5 text-sm">
+          <li>Caméras IP & HD Dahua</li>
+          <li>Contrôle d'accès & Pointeuses</li>
+          <li>Visiophonie & Interphonie</li>
+          <li>Alarmes & Détection incendie</li>
+        </ul>
+      </div>
+
+      <div>
+        <h4 class="text-white font-semibold mb-4">Contact</h4>
+        <ul class="space-y-3 text-sm">
+          <li class="flex items-start gap-2"><i data-lucide="map-pin" class="w-4 h-4 mt-0.5 shrink-0"></i> Cité Douzi 3, Lot N°489, Bab Ezzouar, Alger 16024</li>
+          <li class="flex items-center gap-2"><i data-lucide="phone" class="w-4 h-4 shrink-0"></i> 0770 88 64 07</li>
+          <li class="flex items-center gap-2"><i data-lucide="clock" class="w-4 h-4 shrink-0"></i> Samedi – Jeudi, 08h30–18h00</li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto border-t border-white/10 mt-12 pt-6 flex flex-col sm:flex-row items-center justify-between gap-4 text-xs text-gray-500">
+      <p>© 2026 IT GATE — Tous droits réservés.</p>
+      <p>Dahua est une marque déposée. IT GATE en est le distributeur partenaire en Algérie.</p>
+    </div>
+  </footer>
+
+  <!-- ============================= -->
+  <!-- BOUTON FLOTTANT WHATSAPP -->
+  <!-- ============================= -->
+  <a href="https://wa.me/213770886407" target="_blank" rel="noopener" aria-label="Contacter IT GATE sur WhatsApp" class="whatsapp-float w-16 h-16 bg-[#25D366] rounded-full flex items-center justify-center shadow-2xl">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="white" class="w-8 h-8">
+      <path d="M17.6 6.32A8.86 8.86 0 0 0 12.05 4a8.94 8.94 0 0 0-7.75 13.4L3 21l3.7-1.28a8.93 8.93 0 0 0 5.35 1.8h.01a8.94 8.94 0 0 0 6.32-15.2ZM12.06 20a7.4 7.4 0 0 1-3.77-1.03l-.27-.16-2.8.97.93-2.73-.18-.28A7.42 7.42 0 1 1 19.5 12.9 7.44 7.44 0 0 1 12.06 20Zm4.07-5.56c-.22-.11-1.31-.65-1.51-.72s-.35-.11-.5.11-.58.72-.71.87-.26.17-.48.06a6.08 6.08 0 0 1-1.79-1.1 6.7 6.7 0 0 1-1.24-1.54c-.13-.22 0-.34.1-.45s.22-.26.33-.39a1.5 1.5 0 0 0 .22-.37.4.4 0 0 0 0-.39c-.06-.11-.5-1.2-.68-1.64s-.36-.37-.5-.38h-.43a.82.82 0 0 0-.6.28 2.5 2.5 0 0 0-.78 1.85 4.34 4.34 0 0 0 .91 2.3 9.94 9.94 0 0 0 3.8 3.36c.53.23.94.36 1.26.47a3 3 0 0 0 1.4.09 2.29 2.29 0 0 0 1.5-1.06 1.87 1.87 0 0 0 .13-1.06c-.06-.1-.2-.16-.43-.27Z"/>
+    </svg>
+  </a>
+
+  <!-- Script principal -->
+  <script src="script.js"></script>
+</body>
+</html>
